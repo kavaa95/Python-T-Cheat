@@ -1,51 +1,50 @@
-# Python-T-Cheat
-# count = 0
-# for i in range(1, 10):
-#     if i % 2 != 0:
-#         count += 1
-#         print(i)
-# print(f"we have {count} even number")
+count = 0
+for i in range(1, 10):
+    if i % 2 != 0:
+        count += 1
+        print(i)
+print(f"we have {count} even number")
+#-----------------------------------------------
+
+def greet(firstName, lastName):
+    print(f"Hi {firstName} {lastName}")
 
 
-# def greet(firstName, lastName):
-#     print(f"Hi {firstName} {lastName}")
+greet("Alex", "Kavanagh")
 
 
-# # greet("Alex", "Kavanagh")
+def calculator(x, y):
+    return x + y
 
 
-# def calculator(x, y):
-#     return x + y
+# x = input("x:")
+
+# y = input("y:")
 
 
-# # x = input("x:")
+total = calculator(2, 1)
+print(total)
 
-# # y = input("y:")
-
-
-# total = calculator(2, 1)
-# print(total)
-
-
+#------------------------------------
 # Fizz Buzz
 
 
-# def fizz_buzz(input):
-#     if input % 3 == 0 and input % 5 == 0:
-#         return "FizzBuzz"
-#     if input % 3 == 0:
-#         return "Fizz"
-#     if input % 5 == 0:
-#         return "Buzz"
-#     return input
+def fizz_buzz(input):
+    if input % 3 == 0 and input % 5 == 0:
+        return "FizzBuzz"
+    if input % 3 == 0:
+        return "Fizz"
+    if input % 5 == 0:
+        return "Buzz"
+    return input
 
 
-# val = " "
-# while val:
-#     val = input("Enter number: ")
-#     if val.lower() == "quit":
-#         break
-#     print(fizz_buzz(int(val)))
+val = " "
+while val:
+    val = input("Enter number: ")
+    if val.lower() == "quit":
+        break
+    print(fizz_buzz(int(val)))
 
 
 import requests
@@ -62,25 +61,25 @@ from unittest import result
 letters = ["a", "b", "c"]
 
 # ADD into a List
-# letters.append("d") #add at the end of a list
-# letters.insert(0, "-")  # add at the end of a list
+letters.append("d") #add at the end of a list
+letters.insert(0, "-")  # add at the end of a list
 
 # Remove into a List
-# letters.pop() #remove last element in a list
-# letters.pop(1) #remove specific element in a list
-# del letters[0:2]# delete range of letter
-# letters.clear() # clear all elements in a list
+letters.pop() #remove last element in a list
+letters.pop(1) #remove specific element in a list
+del letters[0:2]# delete range of letter
+letters.clear() # clear all elements in a list
 
 
-# print(letters.index("c")) print index of specific element
-# print(letters.count("c")) # print how many C are in the list
+print(letters.index("c")) #print index of specific element
+print(letters.count("c")) # print how many C are in the list
 
 # Start
-# items = [
-#     ("Product1", 10),
-#     ("Product2", 9),
-#     ("Product3", 12),
-# ]
+items = [
+    ("Product1", 10),
+    ("Product2", 9),
+    ("Product3", 12),
+]
 
 
 # def sort_item(item):
